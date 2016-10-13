@@ -14,7 +14,7 @@ function monkey($n, $m) {
         if (($i + 1) % $m == 0) {
             unset($arr[$i]);
         } else {
-            array_push($arr, $arr[$i]); //如果没数到n或n的倍数,则把该猴放回尾部.
+            array_push($arr, $arr[$i]); //如果没数到m或m的倍数,则把该猴放回尾部.
             unset($arr[$i]);
         }
         $i++;
